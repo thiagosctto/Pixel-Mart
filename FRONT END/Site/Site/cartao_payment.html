@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Pagamento</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <a href="cart_summary.html">Voltar</a>
+        </div>
+    </header>
+
+    <div class="payment-container">
+        <h2>Carrinho de Pagamento</h2>
+        <br>
+        <br>
+        <div class="cart-summary">
+            <p>Total: <strong id="cart-total">R$ 0.00</strong></p>
+        </div>
+
+        <form class="payment-form" onsubmit="finalizePayment(event)">
+            <h2>Informações do Cartão</h2>
+            <br>
+            <label for="card-name">Nome no Cartão</label>
+            <input type="text" id="card-name" name="card-name" required>
+
+            <label for="card-number">Número do Cartão</label>
+            <input type="text" id="card-number" name="card-number" required>
+
+            <label for="expiry-date">Data de Validade (MM/AA)</label>
+            <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM/AA">
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="submit" class="finalizar-pagamento">Finalizar Pagamento</button>
+        </form>
+    </div>
+
+    <script>
+        // Recupera o carrinho do localStorage e atualiza o total
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+        function updateCartTotal() {
+            const total = cart.reduce((sum, item) => sum + item.price, 0);
+            document.getElementById('cart-total').textContent = `R$ ${total.toFixed(2)}`;
+        }
+    
+        // Validação e envio das informações do pagamento
+        async function finalizePayment(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+    
+            // Recuperar os valores do formulário
+            const cardName = document.getElementById('card-name').value.trim();
+            const cardNumber = document.getElementById('card-number').value.trim();
+            const expiryDate = document.getElementById('expiry-date').value.trim();
+            const cvv = document.getElementById('cvv').value.trim();
+    
+            // Validações simples
+            if (!cardName || !cardNumber || !expiryDate || !cvv) {
+                alert("Por favor, preencha todos os campos do formulário.");
+                return;
+            }
+    
+            if (cardNumber.length !== 16 || isNaN(cardNumber)) {
+                alert("O número do cartão deve conter 16 dígitos.");
+                return;
+            }
+    
+            if (cvv.length !== 3 || isNaN(cvv)) {
+                alert("O CVV deve conter 3 dígitos.");
+                return;
+            }
+    
+            // Simulação de envio para o backend
+            const total = cart.reduce((sum, item) => sum + item.price, 0);
+    
+            const paymentData = {
+                nomeNoCartao: cardName,
+                numeroDoCartao: cardNumber,
+                dataValidade: expiryDate,
+                cvv: cvv,
+                valorTotal: total
+            };
+    
+            try {
+                // Simulação de requisição POST
+                const response = await fetch('http://localhost:8080/pagamentos', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(paymentData)
+                });
+    
+                if (response.ok) {
+                    const result = await response.json();
+                    alert("Pagamento realizado com sucesso!");
+                    localStorage.removeItem('cart'); // Limpa o carrinho após o pagamento
+                    window.location.href = 'index.html'; // Redireciona para a página de sucesso
+                } else {
+                    const errorData = await response.json();
+                    alert(errorData.message || "Ocorreu um erro ao processar o pagamento.");
+                }
+            } catch (error) {
+                alert("Erro ao se conectar ao servidor. Tente novamente mais tarde.");
+                console.error(error);
+            }
+        }
+    
+        // Atualiza o total no carregamento da página
+        window.onload = updateCartTotal;
+    </script>  
+</body>
+</html>
