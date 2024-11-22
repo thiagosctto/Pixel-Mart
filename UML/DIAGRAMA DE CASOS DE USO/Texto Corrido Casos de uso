@@ -1,0 +1,41 @@
+Login e Cadastro:
+
+Fazer login na plataforma.
+Caso esqueça a senha ou o login, realizar a recuperação via número de telefone ou e-mail vinculado.
+Caso não tenha um login, realizar o cadastro, incluindo e-mail, senha e dados pessoais.
+Após o cadastro, confirmar o registro por meio de um link enviado por e-mail ou SMS.
+
+Gerenciamento de Conta:
+
+Acessar a aba "Minha conta".
+Atualizar dados pessoais, senha ou e-mail.
+Adicionar endereço de entrega ou gerenciar endereços existentes (edição e exclusão).
+
+Interação com o Carrinho e Pedidos:
+
+Navegar pela tela inicial e adicionar jogos ao carrinho.
+Editar o carrinho, se necessário.
+Criar um pedido selecionando um ou mais jogos.
+Editar o pedido enquanto ele ainda não foi finalizado.
+Visualizar os pedidos realizados.
+
+Compra e Pagamento:
+
+Escolher uma forma de pagamento:
+
+Cartão de débito ou crédito.
+PIX.
+Boleto.
+Adicionar e/ou selecionar uma forma de pagamento.
+Adicionar cupons de desconto ou removê-los.
+Visualizar detalhes da compra.
+Após a compra, solicitar reembolso em até 7 dias (se aplicável).
+
+Histórico e Recompra:
+
+Visualizar o histórico de compras.
+Refazer uma compra baseada no histórico.
+Avaliações e Suporte:
+
+Avaliar um jogo da loja ou Avaliar a loja
+Solicitar suporte para problemas com produtos ou compras.
