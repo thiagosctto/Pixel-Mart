@@ -20,9 +20,13 @@ Tecnologias Utilizadas
 🚀 As tecnologias utilizadas no projeto 🎮 PixelMart 🎮 são:
 
 Engenharia de Software: Metodologias e boas práticas para planejamento e desenvolvimento do sistema.
+
 Linguagem de Programação: JAVA
+
 Frontend: JavaScript, HTML, CSS
+
 Banco de Dados: PostgreSQL
+
 SQL: Para manipulação e gerenciamento dos dados do banco
 
 Estrutura do Projeto
@@ -30,10 +34,15 @@ Estrutura do Projeto
 🔐 O repositório está organizado da seguinte maneira 🔐
 
 A pasta /Docs contém a documentação do projeto.
+
 A pasta /UML contém o diagrama Entidade-Relacionamento (ER) e outros diagramas UML utilizados no projeto.
+
 A pasta /BANCO DE DADOS contém o script SQL para criação do banco de dados e manipulação dos dados.
+
 A pasta /JAVA/Java contém o código-fonte do backend desenvolvido em Java.
+
 A pasta /FRONT END/Site/Site contém o frontend do projeto, incluindo os arquivos HTML, CSS e JavaScript.
+
 Esperamos que este projeto seja útil e ajude no estudo de sistemas de gerenciamento para jogos.
 
 Equipe 🎮 PixelMart 🎮
