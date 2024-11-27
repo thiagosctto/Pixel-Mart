@@ -1,4 +1,5 @@
 Projeto 🎮 PixelMart 🎮
+
 Bem-vindo(a) ao repositório do projeto 🎮 PixelMart 🎮! Este projeto foi desenvolvido com o objetivo de estudar o gerenciamento de informações relacionadas a uma loja de jogos, como jogos, clientes, pedidos, entre outros.
 
 Descrição
