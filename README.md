@@ -6,14 +6,19 @@ Descrição
 
 📚 O projeto PixelMart é uma aplicação voltada para o gerenciamento eficiente de uma loja de jogos. Ele permite o controle de estoque de jogos, cadastro de clientes, gerenciamento de pedidos e vendas, entre outras funcionalidades essenciais para o funcionamento de uma loja de jogos. 📚
 
+
 Funcionalidades
 
 🛠️🎮 O projeto 🎮 PixelMart 🎮 oferece as seguintes funcionalidades principais:
 
 Gerenciamento de Jogos: Cadastro de jogos, incluindo título e preço.
+
 Cadastro de Clientes: Registro e manutenção de dados dos clientes, como nome, endereço, telefone e histórico de compras.
+
 Gerenciamento de Pedidos: Criação e controle de status dos pedidos (pendente, em processamento, enviado, entregue).
+
 Controle de Estoque: Monitoramento da quantidade de produtos em estoque.
+
 
 Tecnologias Utilizadas
 
@@ -28,6 +33,7 @@ Frontend: JavaScript, HTML, CSS
 Banco de Dados: PostgreSQL
 
 SQL: Para manipulação e gerenciamento dos dados do banco
+
 
 Estrutura do Projeto
 
