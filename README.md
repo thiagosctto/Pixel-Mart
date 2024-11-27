@@ -1,13 +1,12 @@
-Projeto 🎮 PixelMart 🎮
+**Projeto 🎮 PixelMart 🎮**
 
 Bem-vindo(a) ao repositório do projeto 🎮 PixelMart 🎮! Este projeto foi desenvolvido com o objetivo de estudar o gerenciamento de informações relacionadas a uma loja de jogos, como jogos, clientes, pedidos, entre outros.
 
-Descrição
+**Descrição**
 
 📚 O projeto PixelMart é uma aplicação voltada para o gerenciamento eficiente de uma loja de jogos. Ele permite o controle de estoque de jogos, cadastro de clientes, gerenciamento de pedidos e vendas, entre outras funcionalidades essenciais para o funcionamento de uma loja de jogos. 📚
 
-
-Funcionalidades
+**Funcionalidades**
 
 🛠️🎮 O projeto 🎮 PixelMart 🎮 oferece as seguintes funcionalidades principais:
 
@@ -19,8 +18,7 @@ Gerenciamento de Pedidos: Criação e controle de status dos pedidos (pendente, 
 
 Controle de Estoque: Monitoramento da quantidade de produtos em estoque.
 
-
-Tecnologias Utilizadas
+**Tecnologias Utilizadas**
 
 🚀 As tecnologias utilizadas no projeto 🎮 PixelMart 🎮 são:
 
@@ -34,10 +32,9 @@ Banco de Dados: PostgreSQL
 
 SQL: Para manipulação e gerenciamento dos dados do banco
 
+**Estrutura do Projeto**
 
-Estrutura do Projeto
-
-🔐 O repositório está organizado da seguinte maneira 🔐
+**🔐 O repositório está organizado da seguinte maneira 🔐**
 
 A pasta /Docs contém a documentação do projeto.
 
@@ -51,4 +48,4 @@ A pasta /FRONT END/Site/Site contém o frontend do projeto, incluindo os arquivo
 
 Esperamos que este projeto seja útil e ajude no estudo de sistemas de gerenciamento para jogos.
 
-Equipe 🎮 PixelMart 🎮
+**Equipe 🎮 PixelMart 🎮**
